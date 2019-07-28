@@ -6,11 +6,13 @@ output "aws_vpc" {
   value = "${aws_vpc.main.id}"
 }
 
-output "primary_subnet_id" {
-  value = "${aws_subnet.primary.id}"
-  # value = "${aws_subnet.primary.}"
+output "elastic_ip_nat_1" {
+  value = "${aws_eip.nat[0].public_ip}"
 }
-output "primary_subnet_cidr" {
-  value = "${aws_subnet.primary.cidr_block}"
+output "elastic_ip_nat_2" {
+  value = "${aws_eip.nat[1].public_ip}"
 }
- 
+
+output "alb-url" {
+  value = "${aws_lb.test.dns_name}"
+}
