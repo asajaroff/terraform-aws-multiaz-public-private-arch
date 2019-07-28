@@ -1,6 +1,6 @@
 # Project specific
 namespace   = "bigdata"
-application = "sampleapp"
+application = "analytics"
 environment = "develop"
 owner       = "alejandro.sajaroff@naranja.com"
 mantainer   = "alejandro.sajaroff@naranja.com"
